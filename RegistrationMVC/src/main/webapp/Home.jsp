@@ -22,13 +22,12 @@
 			
 		</div>
 		<div>
-			<a class="active" href="home">Home</a> <a href="/blog">Blog</a>
-			<a href="/Hotels">Hotels</a> 
-			
+			<a class="active" href="home">Home</a> <a href="blog">Blog</a>
+			<a href="Hotels.jsp">Hotels</a> 
 		</div>
 		<div class="log">
-			<a href="/signup">Signup</a> 
-			<a href="/signIn">Login</a>
+			<a href="Register.jsp">Signup</a> 
+			<a href="Login.jsp">Login</a>
 		</div>
 	</div>
 

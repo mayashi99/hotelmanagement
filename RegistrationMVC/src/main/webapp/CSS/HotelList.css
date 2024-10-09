@@ -1,39 +1,87 @@
 @charset "UTF-8";
 
 
+.topnav {
+  
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .topnav a {
+  float: center;
+  color: #def5f9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #cdcdd7;
+  color: rgb(20, 19, 19);
+  border-radius: 20%;
+}
+
+.topnav a.active {
+  background-color: #c3cfe1;
+  color: rgb(28, 28, 28);
+  border-radius: 20%;
+  
+} 
+.login-btn{
+display: none;
+}
+.signup-btn{
+ display: none;
+}
+.log{
+    color: black;
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;
+    float: right;
+    border-color: black;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    
+    
+}
+
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.title {
-  color: grey;
-  font-size: 18px;
+.hotel-image {
+    width: 100%;
+    border-radius: 10px;
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+h3 {
+    font-size: 1.5em;
 }
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
+.rating {
+    color: gold;
+    margin: 10px 0;
 }
 
-button:hover, a:hover {
-  opacity: 0.7;
+.follow-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
