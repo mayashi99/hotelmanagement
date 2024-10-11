@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Booking Registration</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="CSS/Regstyles.css"> <!-- Link to your CSS file -->
     <script>
         function togglePassword() {
             var password = document.getElementsByName('password')[0];
@@ -97,3 +97,5 @@
     </div>
 </body>
 </html>
+
+
