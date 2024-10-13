@@ -1,5 +1,59 @@
 @charset "UTF-8";
 
+body{
+	background-color:#C1D3E7;
+}
+
+.topnav {
+  
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .topnav a {
+  float: center;
+  color: #def5f9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #cdcdd7;
+  color: rgb(20, 19, 19);
+  border-radius: 20%;
+}
+
+.topnav a.active {
+  background-color: #c3cfe1;
+  color: rgb(28, 28, 28);
+  border-radius: 20%;
+  
+} 
+.login-btn{
+display: none;
+}
+.signup-btn{
+ display: none;
+}
+.log{
+    color: black;
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;
+    float: right;
+    border-color: black;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    
+    
+}
+
 .hotel-card {
     display: flex;
     border: 1px solid #ddd;
@@ -83,4 +137,12 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
 

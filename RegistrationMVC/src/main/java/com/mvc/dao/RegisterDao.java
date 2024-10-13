@@ -33,6 +33,16 @@ public class RegisterDao {
             }
 
             try (PreparedStatement preparedStatement = con.prepareStatement(query)) {
+                // Log data being passed to SQL query for testing
+                System.out.println("Inserting user with details:");
+                System.out.println("First Name: " + firstName);
+                System.out.println("Last Name: " + lastName);
+                System.out.println("Email: " + email);
+                System.out.println("Username: " + userName);
+                System.out.println("Password: " + password);  // Be cautious about logging sensitive data
+                System.out.println("Phone Number: " + phoneNumber);
+                System.out.println("Nationality: " + nationality);
+                System.out.println("Date of Birth: " + dob);
 
                 // Set the parameters for the query
                 preparedStatement.setString(1, firstName);

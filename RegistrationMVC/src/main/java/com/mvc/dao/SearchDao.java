@@ -5,13 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.mvc.bean.HotelBean;
 import com.mvc.bean.SearchBean;
 import com.mvc.util.DBConnection;
 
 public class SearchDao {
 
 	
-	public String searchHotel(SearchBean searchBean) {
+	public HotelBean[] searchHotel(SearchBean searchBean) {
         // Get individual fields from the SearchBean
         String location = searchBean.getLocation();
         String date = searchBean.getDate();
@@ -25,7 +26,7 @@ public class SearchDao {
 	            // Test the database connection
 	            if (con == null) {
 	                System.out.println("Connection to the database failed.");
-	                return "Database connection failed!";
+	                return new HotelBean[0];
 	            } else {
 	                System.out.println("Database connection successful.");
 	            }
@@ -37,7 +38,8 @@ public class SearchDao {
 
 	                // Execute the query
 	                try (ResultSet resultSet = preparedStatement.executeQuery()) {
-
+	                	 
+	                	 HotelBean[] hotels = new HotelBean[10];
 	                    if (resultSet.next()) {
 	                        resultMessage = "Events found for the given location and date:";
 	                        // Process resultSet to retrieve event details if needed
@@ -46,18 +48,24 @@ public class SearchDao {
 	                        
 	                       // Allocates memory for 5 integers
 
-	                        
+	                        int i=0;
 	                        do {
-	                        	
+	                        	HotelBean newhotel = new HotelBean(resultSet.getString("name"), resultSet.getString("name"), resultSet.getString("name"),resultSet.getString("name"));
+	                        	hotels[i]=newhotel;
+	                        	i++;
 	                        	 System.out.println("SQL Error: " );
+	                        	 
 	                            // Example: Retrieve event details and append to resultMessage
 	                            //String eventName = resultSet.getString("eventName");
 	                            //String eventDescription = resultSet.getString("eventDescription");
 	                           // resultMessage += "\nEvent: " + eventName + ", Description: " + eventDescription;
 	                        } while (resultSet.next());
+	                      
 	                    } else {
 	                        resultMessage = "No events found for the given location and date.";
 	                    }
+	                    return hotels; 
+	                    
 	                }
 	            }
 	        } catch (SQLException e) {
@@ -65,6 +73,6 @@ public class SearchDao {
 	            e.printStackTrace();  // Log the stack trace for further investigation
 	        }
 
-	        return resultMessage;  // Return the result of the search process
+	        return  new HotelBean[0];  // Return the result of the search process
 	    }
 	}

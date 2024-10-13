@@ -2,21 +2,26 @@ package com.mvc.bean;
 
 public class SearchBean {
 	
-	 private String Location;
-	    private String Date;
-	    
-	    
-		public String getLocation() {
-			return Location;
-		}
-		public void setLocation(String location) {
-			this.Location = location;
-		}
-		public String getDate() {
-			return Date;
-		}
-		public void setDate(String date) {
-			this.Date = date;
-		}
+	
 
-}
+	
+	    private String location;
+	    private String date;
+
+	    // Getters and setters for location and date
+	    public String getLocation() {
+	        return location;
+	    }
+
+	    public void setLocation(String location) {
+	        this.location = location;
+	    }
+
+	    public String getDate() {
+	        return date;
+	    }
+
+	    public void setDate(String date) {
+	        this.date = date;
+	    }
+	}

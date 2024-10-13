@@ -22,7 +22,7 @@
 			
 		</div>
 		<div>
-			<a class="active" href="home">Home</a> <a href="blog">Blog</a>
+			<a class="active" href="home">Home</a> <a href="blog.jsp">Blog</a>
 			<a href="Hotels.jsp">Hotels</a> 
 		</div>
 		<div class="log">
@@ -55,6 +55,8 @@
 							placeholder="Location..."> <label for="date">Date:</label>
 						<input class="data-input" type="date" id="date" name="date">
 						<button class="search-btn" type="submit">Search</button>
+						
+            
 					</div>
 				</form>
 			</div>
@@ -74,8 +76,8 @@
     </div>
     <div class="column">
     <div class="w3-content w3-section" style="max-width: 600px" >
-		<img class="mySlides1" src="images/offer 5.jpg" style="width: 100%">
-		<img class="mySlides1" src="images/offer 2.jpg" style="width: 100%">
+		<img class="mySlides1" src="images/offer 13.jpg" style="width: 100%">
+		<img class="mySlides1" src="images/offer 10.jpg" style="width: 100%">
 		<img class="mySlides1" src="images/offer 3.jpg" style="width: 100%">
 	</div>
       <img src="images/offer 3.jpg" alt="wedding">
@@ -89,14 +91,14 @@
     </div>
     
     <div class="column">
-      <img src="images/offer 1.png" alt="falls">
-      <img src="images/offer 2.jpg" alt="ocun">
+      <img src="images/offer 11.jpg" alt="falls">
+      <img src="images/offer 12.png" alt="ocun">
      
     </div>
     
     
   </div>
-  </div>
+  
 	<br>
 	<div class="scroll-container">
   <img src="images/display 1.jpg" alt="Cinque Terre">

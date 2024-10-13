@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import com.mvc.bean.HotelBean;
 import com.mvc.bean.SearchBean;
 import com.mvc.dao.LoginDao;
 import com.mvc.dao.SearchDao;
@@ -36,13 +37,13 @@ public class SearchServlet extends HttpServlet {
 	        
 	        try {
 	            // Insert the user data into the database
-	            String userRegistered = searchDao.searchHotel(searchBean);
+	        	HotelBean[] hotels = searchDao.searchHotel(searchBean);
 
-	            if (userRegistered.equals("Login successful!")) {
+	            if (true) {
 	            	System.out.println( "Login ssssuccessful!"); 
 	                // If registration is successful, redirect to Home.jsp
-	            	// request.setAttribute("userName", userName);
-	                //request.getRequestDispatcher("/Home.jsp").forward(request, response);
+	            	request.setAttribute("hotels", hotels);
+	                request.getRequestDispatcher("/HotelsList.jsp").forward(request, response);
 	            } else {
 	            	System.out.println( "Login cd!"); 
 	                // If registration fails, display the error message

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    background-color: #f4f4f9;
+}
+
+.form-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto; /* Center the image with space below it */
+    border-radius: 8px;
+}
+
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+    font-style: normal;
+    font-size: 14px;
+    font-family: serif;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #aaa;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #6a11cb;
+}
+
+button {
+    width: 32%;
+    padding: 10px;
+    background-color:#386fa4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 2%;
+}
+
+button:hover {
+    background-color: #386fa4;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#packageList {
+    margin-top: 30px;
+}
+
+.space-between {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button with icon for update packages */
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #386fa4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.nav-button:hover {
+    background-color: #386fa4;
+}
+
+.nav-button i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+#packages {
+    list-style: none;
+    padding: 0;
+}
+
+#packages li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Input field styles */
+input:focus, textarea:focus {
+    outline: none;
+    border-color:#386fa4;
+}
+
+/* Icon in the button */
+.nav-button i {
+    font-size: 16px;
+    margin-right: 8px;
+}
