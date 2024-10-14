@@ -149,8 +149,8 @@
 				</div>
 
 			</div>
+<input type="button" class="submit_btn" value="Proceed to Checkout" onclick="window.location.href='Succeeded.jsp';">
 
-			<input type="submit" value="Proceed to Checkout" class="submit_btn">
 		</form>
 
 	</div>
@@ -164,7 +164,7 @@
 	</div>
 	<br>
 
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="Payment.js"></script>
 
 </body>
 </html>

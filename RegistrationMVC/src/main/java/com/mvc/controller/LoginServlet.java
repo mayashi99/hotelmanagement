@@ -51,9 +51,13 @@ public class LoginServlet extends HttpServlet {
 	            	System.out.println( "Login ssssuccessful!"); 
 	                // If registration is successful, redirect to Home.jsp
 	            	 request.setAttribute("userName", userName);
-	                request.getRequestDispatcher("/Home.jsp").forward(request, response);
+	                request.getRequestDispatcher("/Hotel.jsp").forward(request, response);
 	            } else {
 	            	System.out.println( "Login cd!"); 
+	            	
+	            	 request.setAttribute("userName", userName);
+	                 
+	              
 	                // If registration fails, display the error message
 	                request.setAttribute("errMessage", userRegistered);
 	                request.getRequestDispatcher("/Login.jsp").forward(request, response);

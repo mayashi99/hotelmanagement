@@ -16,13 +16,13 @@ public class UserprofileDao {
 
         try {
             con = DBConnection.createConnection();
-            String query = "UPDATE users SET email=?, address=?, dob=?, profileImage=? WHERE username=?";
+            String query = "UPDATE users SET email=?, nationality=?  WHERE userName=?";
             ps = con.prepareStatement(query);
             ps.setString(1,  userprofileBean.getEmail());
             ps.setString(2,  userprofileBean.getAddress());
-            ps.setString(3,  userprofileBean.getDob());
+           // ps.setString(3,  userprofileBean.getDob());
            // ps.setString(4,  userprofileBean.getProfileImage());
-            ps.setString(5,  userprofileBean.getUsername());
+            ps.setString(3,  userprofileBean.getUsername());
 
             int i = ps.executeUpdate();
             if (i != 0) {
@@ -30,6 +30,7 @@ public class UserprofileDao {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("SQL Error: " + e.getMessage());
         }
 
         return "Update failed!";

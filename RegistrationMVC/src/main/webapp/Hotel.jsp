@@ -19,8 +19,8 @@
 			
 		</div>
 		<div>
-			<a class="active" href="home">Home</a> <a href="blog.jsp">Blog</a>
-			<a href="Hotels.jsp">Hotels</a> 
+			<a  href="Home.jsp">Home</a> <a href="blog.jsp">Blog</a>
+			<a class="active" href="Hotels.jsp">Hotels</a> 
 		</div>
 		<div class="log">
 			<a href="Register.jsp">Signup</a> 
@@ -43,16 +43,16 @@
         <p class="last-booked">Last Booked - 18 hours ago</p>
     </div>
     <div class="hotel-pricing">
-        <p class="discount">16% Off! <span class="old-price">$250</span></p>
-        <p class="current-price">$210 <span>1 Room/Night</span></p>
-        <button class="book-now-btn">Book Now</button>
+        <p class="discount">16% Off! <span class="old-price">RS:2500</span></p>
+        <p class="current-price">RS:2100 <span>1 Room/Night</span></p>
+        <button class="book-now-btn" onclick="window.location.href='Booking.jsp';">Book Now</button>
     </div>
 </div>
 
 <div class="hotel-card">
     <img src="images/hotel1.jpg" alt="Hotel Image" class="hotel-image">
     <div class="hotel-info">
-        <h3 class="hotel-name">The Orchid Hotel</h3>
+        <h3 class="hotel-name">The Ritz-Carlton</h3>
         <p class="hotel-location">Ashram Road, Ahmedabad</p>
         <div class="hotel-features">
             <span>📶</span> <span>🍽️</span> <span>🧴</span> <span>🚗</span> <span>🏊‍♂️</span> <span>👨‍👩‍👧‍👦</span> <span>Couple Friendly</span>
@@ -63,16 +63,16 @@
         <p class="last-booked">Last Booked - 18 hours ago</p>
     </div>
     <div class="hotel-pricing">
-        <p class="discount">16% Off! <span class="old-price">$250</span></p>
-        <p class="current-price">$210 <span>1 Room/Night</span></p>
-        <button class="book-now-btn">Book Now</button>
+        <p class="discount">16% Off! <span class="old-price">RS:3000</span></p>
+        <p class="current-price">RS:2900 <span>1 Room/Night</span></p>
+         <button class="book-now-btn" onclick="window.location.href='Booking.jsp';">Book Now</button>
     </div>
 </div>
 
 <div class="hotel-card">
     <img src="images/hotel2.jpg" alt="Hotel Image" class="hotel-image">
     <div class="hotel-info">
-        <h3 class="hotel-name">The Orchid Hotel</h3>
+        <h3 class="hotel-name">The Plaza Hotel</h3>
         <p class="hotel-location">Ashram Road, Ahmedabad</p>
         <div class="hotel-features">
             <span>📶</span> <span>🍽️</span> <span>🧴</span> <span>🚗</span> <span>🏊‍♂️</span> <span>👨‍👩‍👧‍👦</span> <span>Couple Friendly</span>
@@ -83,16 +83,16 @@
         <p class="last-booked">Last Booked - 18 hours ago</p>
     </div>
     <div class="hotel-pricing">
-        <p class="discount">16% Off! <span class="old-price">$250</span></p>
-        <p class="current-price">$210 <span>1 Room/Night</span></p>
-        <button class="book-now-btn">Book Now</button>
+        <p class="discount">16% Off! <span class="old-price">RS:1250</span></p>
+        <p class="current-price">RS:1210 <span>1 Room/Night</span></p>
+          <button class="book-now-btn" onclick="window.location.href='Booking.jsp';">Book Now</button>
     </div>
 </div>
 
 <div class="hotel-card">
     <img src="images/hotel3.jpg" alt="Hotel Image" class="hotel-image">
     <div class="hotel-info">
-        <h3 class="hotel-name">The Orchid Hotel</h3>
+        <h3 class="hotel-name">The Peninsula</h3>
         <p class="hotel-location">Ashram Road, Ahmedabad</p>
         <div class="hotel-features">
             <span>📶</span> <span>🍽️</span> <span>🧴</span> <span>🚗</span> <span>🏊‍♂️</span> <span>👨‍👩‍👧‍👦</span> <span>Couple Friendly</span>
@@ -103,9 +103,9 @@
         <p class="last-booked">Last Booked - 18 hours ago</p>
     </div>
     <div class="hotel-pricing">
-        <p class="discount">16% Off! <span class="old-price">$250</span></p>
-        <p class="current-price">$210 <span>1 Room/Night</span></p>
-        <button class="book-now-btn">Book Now</button>
+        <p class="discount">16% Off! <span class="old-price">RS:2250</span></p>
+        <p class="current-price">RS:2210 <span>1 Room/Night</span></p>
+           <button class="book-now-btn" onclick="window.location.href='Booking.jsp';">Book Now</button>
     </div>
 </div>
 

@@ -16,7 +16,7 @@ public class UserprofileServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String action = request.getParameter("action");
-
+        System.out.println("SQL Error: " + action);
         if ("update".equals(action)) {
             // Get form parameters
             String username = request.getParameter("username");
@@ -36,7 +36,7 @@ public class UserprofileServlet extends HttpServlet {
             // Call DAO to update user profile
             UserprofileDao userProfileDao = new UserprofileDao();
             String result = userProfileDao.updateUserProfile(userProfile);
-
+           
             // Redirect based on the result
             if ("SUCCESS".equals(result)) {
                 response.sendRedirect("profile_success.jsp");

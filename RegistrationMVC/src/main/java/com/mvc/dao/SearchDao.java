@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import com.mvc.bean.HotelBean;
 import com.mvc.bean.SearchBean;
 import com.mvc.util.DBConnection;
+import com.mvc.util.DatabaseConnectionManager;
 
 public class SearchDao {
 
@@ -21,8 +22,12 @@ public class SearchDao {
 	        // SQL query to search for records based on location and date
 	        String query = "SELECT * FROM hotels";
 	        String resultMessage = "No events found for the given location and date.";
+	        DatabaseConnectionManager dbManager = DatabaseConnectionManager.getInstance();
+	        try (Connection con = dbManager.getConnection();) {
+	           
 
-	        try (Connection con = DBConnection.createConnection()) {
+	            // Get the connection object
+	            
 	            // Test the database connection
 	            if (con == null) {
 	                System.out.println("Connection to the database failed.");

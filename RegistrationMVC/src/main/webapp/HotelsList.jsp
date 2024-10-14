@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8" import="com.mvc.bean.HotelBean" %>
+	pageEncoding="UTF-8" import="com.mvc.bean.HotelBean"%>
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,8 @@
 
 		</div>
 		<div>
-			<a href="home">Home</a> <a href="blog">Blog</a> <a href="Hotels.jsp">Hotels</a>
+			<a  href="Home.jsp">Home</a> <a href="Blog.jsp">Blog</a> <a
+				href="Hotel.jsp">Hotels</a>
 		</div>
 		<div class="log">
 			<a href="Register.jsp">Signup</a> <a href="Login.jsp">Login</a>
@@ -26,25 +27,26 @@
 	<br>
 	<br>
 	<%
-	HotelBean hotels[] = (HotelBean[])request.getAttribute("hotels");
+	HotelBean hotels[] = (HotelBean[]) request.getAttribute("hotels");
 	for (HotelBean hotel : hotels) {
-		if (hotel != null){
-		System.out.println("SQL Error: " + hotel.getName());
-		
+		if (hotel != null) {
+			System.out.println("SQL Error: " + hotel.getName());
 	%>
 	<div class="card">
-		<img src="hotel-image.jpg" alt="Hotel Image" class="hotel-image">
-		<h3><%= hotel.getName() %></h3>
-		<p>Email:<%= hotel.getDescription() %> </p>
+		<img src="hotellist.jpg" alt="Hotel Image" class="hotel-image">
+		<h3><%=hotel.getName()%></h3>
+		<p>
+			Email:<%=hotel.getDescription()%>
+		</p>
 		<p>Phone: 0123456789</p>
 		<div class="rating">★★★★★</div>
 		<button class="follow-btn">Book</button>
 	</div>
 	<%
-		}
+	}
 	}
 	%>
-	
+
 
 </body>
 </html>

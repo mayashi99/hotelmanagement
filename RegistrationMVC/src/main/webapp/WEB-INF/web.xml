@@ -32,4 +32,14 @@
     <servlet-name>SearchServlet</servlet-name>
     <url-pattern>/SearchServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DatabaseConnectionManager</display-name>
+    <servlet-name>DatabaseConnectionManager</servlet-name>
+    <servlet-class>com.mvc.util.DatabaseConnectionManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatabaseConnectionManager</servlet-name>
+    <url-pattern>/DatabaseConnectionManager</url-pattern>
+  </servlet-mapping>
 </web-app>

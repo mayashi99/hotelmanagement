@@ -47,7 +47,7 @@ public class RegisterServlet extends HttpServlet {
 
             if (userRegistered.equals("User successfully registered!")) {
                 // If registration is successful, redirect to Home.jsp
-                request.getRequestDispatcher("/Home.jsp").forward(request, response);
+                request.getRequestDispatcher("/Login.jsp").forward(request, response);
             } else {
                 // If registration fails, display the error message
                 request.setAttribute("errMessage", userRegistered);

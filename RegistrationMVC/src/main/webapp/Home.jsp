@@ -22,8 +22,8 @@
 			
 		</div>
 		<div>
-			<a class="active" href="home">Home</a> <a href="blog.jsp">Blog</a>
-			<a href="Hotels.jsp">Hotels</a> 
+			<a class="active" href="home">Home</a> <a href="Blog.jsp">Blog</a>
+			<a href="Hotel.jsp">Hotels</a> 
 		</div>
 		<div class="log">
 			<a href="Register.jsp">Signup</a> 

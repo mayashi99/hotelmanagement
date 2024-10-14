@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+.topnav {
+  
+  background-color: #000000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .topnav a {
+  float: center;
+  color: #def5f9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #cdcdd7;
+  color: rgb(20, 19, 19);
+  border-radius: 20%;
+}
+
+.topnav a.active {
+  background-color: #c3cfe1;
+  color: rgb(28, 28, 28);
+  border-radius: 20%;
+  
+} 
+.login-btn{
+display: none;
+}
+.signup-btn{
+ display: none;
+}
+.log{
+    color: black;
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;
+    float: right;
+    border-color: black;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    
+    
+}
+
+
+.container {
+  display: flex;
+}
+
+.buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.button-container {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Adjust alignment */
+  color: pink;
+}
+
+.display {
+  flex: 1;
+  padding-left: 20px;
+  text-align: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+.display-text {
+  font-size: 30px;
+  /* Increase font size */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.button-container button {
+  flex-basis: calc(33.33% - 40px);
+  /* Three buttons in a row with increased margin */
+  margin: 20px;
+  /* Increase margin between buttons */
+  width: 100px;
+  height: 160px;
+  font-size: 16px;
+  color: black;
+  background-color: #F9EAF2;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  /* Add transition for smooth hover effect */
+}
+
+.button-container button img {
+  width: 100%;
+  /* Ensure image fills the button */
+  height: 80%;
+}
+
+.button-container button span {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+  /* Add margin to the top of the button text */
+}
+
+/* Highlight selected button */
+.button-container button.selected {
+  background-color: #e7b1b1;
+  border-color: white;
+  /* Add border color to the selected button */
+  color: white;
+}
+
+.button-container button:hover {
+  background-color: #e7b1b1;
+  color: white;
+  border-color: #e7b1b1;
+  /* Change border color on hover */
+}
+
+.book-now-btn {
+  background-color: #e88b8b;
+  color: white;
+  font-size: 28px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  /* Add transition for smooth hover effect */
+
+}
+
+.display-text {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.price-label {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.normal-text {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.event-text {
+  font-size: 30px;
+}
+
+.ribbon {
+  background-color: #e7b1b1;
+  color: white;
+  font-size: 34px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.ribbon span {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 8px;
+  padding-top: 20px;
+  
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  padding: 0 4px;
+  border-radius: 8px;
+}
+
+.column img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}

@@ -48,6 +48,8 @@ public class PaymentServlet extends HttpServlet {
 
         // Redirect based on the result
         if ("SUCCESS".equals(result)) {
+        	
+        	 
            // response.sendRedirect("payment_success.jsp");
         } else {
           //  response.sendRedirect("payment_error.jsp");

@@ -66,10 +66,11 @@
 				id="fileUpload" accept="image/*">
 		</div>
 
-		<form action="UserProfileServlet" method="post" id="profileForm">
+		<form action="${pageContext.request.contextPath}/UserProfileServlet" method="post" id="profileForm">
+		<input type="hidden" name="action" value="update">
 			<div class="form-group">
 				<label for="username">Username</label> <input type="text"
-					id="username" value="Jenny Wilson" name="Username">
+					id="username" value="Jenny Wilson" name="username">
 			</div>
 			<div class="form-group">
 				<label for="email">Email</label> <input type="text" id="email"
@@ -82,19 +83,29 @@
 
 			<div class="form-group">
 				<label for="DOB">DOB</label> <input type="date" id="date"
-					value="23/09/2008" name="date">
+					value="23/09/2008" name="dob">
 			</div>
 
 
 			<div class="form-group">
 				<button type="submit" class="btn save">Save Changes</button>
 			</div>
+		
+		</form>
+
+		<form action="${pageContext.request.contextPath}/UserProfileServlet" method="post" id="profileForm">
+		<input type="hidden" name="action" value="delete">
+			<div class="form-group">
+				<label for="username">Username</label> <input type="text"
+					id="username" value="Jenny Wilson" name="username">
+			</div>
+		
+
 			<div class="form-group">
 				<button type="submit" class="btn save">Delete</button>
 			</div>
+		
 		</form>
-
-
 
 	</div>
 

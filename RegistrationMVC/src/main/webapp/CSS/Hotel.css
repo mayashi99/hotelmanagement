@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 body{
-	background-color:#C1D3E7;
+	background-color:#F0FAFF;
 }
-
 .topnav {
   
   background-color: #000000;
@@ -53,6 +52,7 @@ display: none;
     
     
 }
+
 
 .hotel-card {
     display: flex;
@@ -132,7 +132,7 @@ display: none;
 .book-now-btn {
     background-color: #007BFF;
     color: white;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
